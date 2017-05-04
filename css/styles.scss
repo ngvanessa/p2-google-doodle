@@ -9,14 +9,38 @@ body {
 }
 
 
-// Stage // 
+// Stage (Parent)
 
 #stage {
     background: #fff;
     position: relative;
+    overflow: hidden;
 }
 
+
+// Child 
 #stage svg { 
     position: absolute;
+}
+
+// Child 
+#stage h1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;  
+}
+
+// Animations Go Here 
+// First Frame of Animation 
+#stage h1, 
+#stage svg {
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+// Last Frame of Animation 
+#stage:hover h1,
+#stage:hover svg {
+    opacity: 1;
 }
 

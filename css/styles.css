@@ -458,10 +458,28 @@ body {
 /* line 14, /Applications/p2-google-doodle/css/styles.scss */
 #stage {
   background: #fff;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
-/* line 19, /Applications/p2-google-doodle/css/styles.scss */
+/* line 22, /Applications/p2-google-doodle/css/styles.scss */
 #stage svg {
   position: absolute; }
+
+/* line 27, /Applications/p2-google-doodle/css/styles.scss */
+#stage h1 {
+  position: absolute;
+  top: 10%;
+  left: 10%; }
+
+/* line 35, /Applications/p2-google-doodle/css/styles.scss */
+#stage h1,
+#stage svg {
+  opacity: 0;
+  transition: opacity 2.5s; }
+
+/* line 42, /Applications/p2-google-doodle/css/styles.scss */
+#stage:hover h1,
+#stage:hover svg {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
