@@ -1,4 +1,22 @@
+// Grand Central Station, Main, Vertex, etc/ //
+@import "normalize";
+@import "google-homepage";
+    
 /* Styling */
 body {
     background: wheat;
+    font-size: 1em;
 }
+
+
+// Stage // 
+
+#stage {
+    background: #fff;
+    position: relative;
+}
+
+#stage svg { 
+    position: absolute;
+}
+
