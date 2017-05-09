@@ -1,46 +1,41 @@
 // Grand Central Station, Main, Vertex, etc/ //
 @import "normalize";
 @import "google-homepage";
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+
     
 /* Styling */
 body {
-    background: wheat;
+    background: #fff;
     font-size: 1em;
 }
 
-
-// Stage (Parent)
-
-#stage {
-    background: #fff;
-    position: relative;
-    overflow: hidden;
+h1 {
+   font-family: 'Dancing Script', cursive; 
 }
 
+/* Staging */
 
-// Child 
-#stage svg { 
-    position: absolute;
+svg {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
-// Child 
-#stage h1 {
-    position: absolute;
-    top: 10%;
-    left: 10%;  
+.dragon {
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  
+  
 }
 
-// Animations Go Here 
-// First Frame of Animation 
-#stage h1, 
-#stage svg {
-    opacity: 0;
-    transition: opacity 2.5s;
+@keyframes slide {
+  
+from {transform: translateX(0);}
+to {transform: translateY(-600px);}
 }
-
-// Last Frame of Animation 
-#stage:hover h1,
-#stage:hover svg {
-    opacity: 1;
-}
-
