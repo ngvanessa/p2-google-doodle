@@ -7,8 +7,28 @@
     
 /* Styling */
 body {
-    background: #fff;
-    font-size: 1em;
+    background: #ffffff;
+}
+
+/* Stage */
+
+#stage {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Child */
+
+#stage svg {
+    width: 500px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#google {
+    width: 500px;
+    height: 600px;
 }
 
 h1 {
@@ -25,6 +45,10 @@ svg {
   align-items: center;
 }
 
+#stage svg {
+    animation: slide 5s infinite;
+}
+
 .dragon {
   animation-name: slide;
   animation-duration: 5s;
@@ -36,6 +60,7 @@ svg {
 
 @keyframes slide {
   
-from {transform: translateX(0);}
-to {transform: translateY(-600px);}
+    0% {transform: translateX(0)};
+    75% {transform: translateY(-300px)};
+    100% {transform: translateY(-600px)};
 }
