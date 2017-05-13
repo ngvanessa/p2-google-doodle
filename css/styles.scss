@@ -3,33 +3,29 @@
 @import "google-homepage";
 
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
     
 /* Styling */
+
 body {
-    background: #ffffff;
+    background: #fff; 
 }
 
-/* Stage */
+.wrapper {
+    margin: 20em auto 2em auto;
+    width: 80%;
+    position: relative;
+}
 
 #stage {
-    position: relative;
-    overflow: hidden;
+    background: #fff;
+    height: 600px;
+    width: 600px;
 }
+
 
 /* Child */
-
-#stage svg {
-    width: 500px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-#google {
-    width: 500px;
-    height: 600px;
-}
 
 h1 {
    font-family: 'Dancing Script', cursive; 
@@ -37,30 +33,20 @@ h1 {
 
 /* Staging */
 
-svg {
-  width: 20%;
-  height: 20%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-#stage svg {
-    animation: slide 5s infinite;
-}
-
 .dragon {
   animation-name: slide;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
-  
-  
+}
+
+button {
+    display: inline-block;
+    
 }
 
 @keyframes slide {
   
-    0% {transform: translateX(0)};
-    75% {transform: translateY(-300px)};
-    100% {transform: translateY(-600px)};
+from {transform: translateX(0};
+    to {transform: translateX(-900px);}
 }
