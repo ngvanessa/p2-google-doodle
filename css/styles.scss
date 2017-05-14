@@ -8,36 +8,25 @@
     
 /* Styling */
 
+#stage svg {
+   position: absolute;
+}
+
 body {
     background: #fff; 
 }
-
-.wrapper {
-    margin: 20em auto 2em auto;
-    width: 80%;
-    position: relative;
-}
-
-#stage {
-    background: #fff;
-    height: 600px;
-    width: 600px;
-}
-
 
 /* Child */
 
 h1 {
    font-family: 'Dancing Script', cursive; 
+    position: absolute;
 }
 
 /* Staging */
 
 .dragon {
-  animation-name: slide;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
+    webkit-animation: slide 25s ease-in;
 }
 
 button {
@@ -47,6 +36,18 @@ button {
 
 @keyframes slide {
   
-from {transform: translateX(0};
-    to {transform: translateX(-900px);}
+0%
+webkit-transform: slideX(2000px);
+    transform: slideX(-1000px);
+}
+
+
+50% {
+    webkit-transform: slideX(-1000px);
+    transform: slideX(-1500px);
+}
+
+50% {
+    webkit-transform: slideX(-1500px);
+    transform: slideX(2000px);
 }
