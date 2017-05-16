@@ -8,36 +8,46 @@
     
 /* Styling */
 
-#stage svg {
-   position: absolute;
-}
-
 body {
     background: #fff; 
 }
 
-/* Child */
-
-h1 {
-   font-family: 'Dancing Script', cursive; 
-    position: absolute;
+#google-logo {
+height: 200px;
+width: 400px;
+margin: 0 auto;
 }
 
-/* Staging */
+#stage {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    height: 300px;
+    width: 600px;
+}
 
-.dragon {
-    webkit-animation: slide 25s ease-in;
+#stage svg {
+    height: 50%;
+    width: 50%;
 }
 
 button {
-    display: inline-block;
-    
+    display: flex;
+    align-items: center;
+}
+
+/* Child */
+
+/* Staging */
+
+#stage svg.dragon {
+    animation: slide 5s ease-in-out;
 }
 
 @keyframes slide {
   
-0%
-webkit-transform: slideX(2000px);
+    0% {
+webkit-transform: slideX(1000px);
     transform: slideX(-1000px);
 }
 
@@ -50,4 +60,5 @@ webkit-transform: slideX(2000px);
 50% {
     webkit-transform: slideX(-1500px);
     transform: slideX(2000px);
+}
 }
