@@ -2,63 +2,54 @@
 @import "normalize";
 @import "google-homepage";
 
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
     
 /* Styling */
 
-body {
-    background: #fff; 
-}
-
-#google-logo {
-height: 200px;
-width: 400px;
-margin: 0 auto;
-}
+/* Presentation  */
 
 #stage {
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    height: 300px;
-    width: 600px;
-}
-
-#stage svg {
-    height: 50%;
+  position: relative;
+  overflow: hidden;
     width: 50%;
+    height: 50%;
 }
 
-button {
-    display: flex;
-    align-items: center;
+
+#google {
+  width: 350px;
+  height: 200px;
+  display: flex;
 }
 
-/* Child */
+svg {
+  width: 30%;
+  height: 30%;
+  margin: 10px auto;
+  display: flex;
+}
 
-/* Staging */
+#dragon {
+  position: absolute;
+  bottom: 10px;
+  left: 500px;
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;  
+}
 
-#stage svg.dragon {
-    animation: slide 5s ease-in-out;
+#wave-1 {
+  animation-name: waves;
+  animation-duration: 5s;
+  animation-timing function: animate 1.5s ease-in-out alternate infinite;
 }
 
 @keyframes slide {
   
-    0% {
-webkit-transform: slideX(1000px);
-    transform: slideX(-1000px);
+  from {transform: translateX(100px) ;}
+  to {transform: translateX(-50px) ;}
 }
 
-
-50% {
-    webkit-transform: slideX(-1000px);
-    transform: slideX(-1500px);
-}
-
-50% {
-    webkit-transform: slideX(-1500px);
-    transform: slideX(2000px);
-}
-}
+@keyframes waves {
+  0%{transform:translate(0, 0)}
+  50%{transform:translate(-80px, 0)}
+  100%{transform:translate(0, 0) } }
