@@ -8,36 +8,42 @@
 /* Presentation  */
 
 #stage {
+  background: white;
+  height: 300px;
+  width: 800px;
   position: relative;
   overflow: hidden;
-    width: 50%;
-    height: 50%;
 }
 
 
 #google {
+margin: 10px auto;
   width: 350px;
   height: 200px;
   display: flex;
 }
 
-svg {
-  width: 30%;
-  height: 30%;
+#svg {
   margin: 10px auto;
   display: flex;
 }
 
 #dragon {
   position: absolute;
+    width: 50%;
+    height: 50%;
   bottom: 10px;
-  left: 500px;
+  left: 350px;
   animation-name: slide;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;  
 }
 
 #wave-1 {
+ position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 350px;
   animation-name: waves;
   animation-duration: 5s;
   animation-timing function: animate 1.5s ease-in-out alternate infinite;
