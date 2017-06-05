@@ -30,10 +30,11 @@ margin: 10px auto;
 
 #dragon {
   position: absolute;
-    width: 50%;
+ width: 50%;
     height: 50%;
   bottom: 10px;
   left: 350px;
+    
   animation-name: slide;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;  
@@ -46,7 +47,12 @@ margin: 10px auto;
     left: 350px;
   animation-name: waves;
   animation-duration: 5s;
-  animation-timing function: animate 1.5s ease-in-out alternate infinite;
+  animation-timing-function: animate 1.5s ease-in-out alternate infinite;
+}
+
+#search {
+    display: block;
+    text-align: center;
 }
 
 @keyframes slide {
